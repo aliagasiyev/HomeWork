@@ -1,4 +1,6 @@
-package LinkedList;
+package JavaCollections.LinkedList;
+
+import java.util.Objects;
 
 public class LinkedList {
     private Node head;
@@ -21,9 +23,10 @@ public class LinkedList {
 
     }
 
+
     public void insertLast(int value) {
         if (tail == null) {
-            insertLast(value);
+            System.out.println();
             return;
         }
         Node node = new Node(value);
@@ -89,7 +92,29 @@ public class LinkedList {
         size--;
         return value;
     }
+    public int getSize(){
+        return size;
+    }
 
+    public void update(int index, int value) {
+        if (index < 0 || index >= size)
+            throw new IndexOutOfBoundsException("Index is out of bounds.");
+
+        Node node = get(index);
+        node.value = value;
+    }
+    public void deleteForObject(Object value) {
+        if (head == null)
+            return;
+
+        Node current = head;
+        while (current.next != null) {{
+                current.next = current.next.next;
+                size--;
+                return;
+            }
+        }
+    }
 
     public Node get(int index) {
         Node node = head;
@@ -102,10 +127,23 @@ public class LinkedList {
     public void display() {
         Node temp = head;
         while (temp != null) {
-            System.out.println(temp.value + " -> ");
+            System.out.print(temp.value + " -> ");
             temp = temp.next;
         }
         System.out.println("END");
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        LinkedList that = (LinkedList) o;
+        return size == that.size && Objects.equals(head, that.head) && Objects.equals(tail, that.tail);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(head, tail, size);
     }
 
     private class Node {
