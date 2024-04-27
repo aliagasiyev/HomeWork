@@ -1,4 +1,4 @@
-package JavaCollections.Collections;
+package JavaCollections.ExamPles;
 
 import java.util.*;
 
@@ -35,6 +35,6 @@ public class CollectionsExample {
         for (Integer groupOfNumbers1 : groupofNumbers1) {
             System.out.println(groupOfNumbers1);
         }
-      //  ArrayList
+      //  ArrayListPractic
     }
 }
