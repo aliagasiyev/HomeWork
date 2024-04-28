@@ -1,4 +1,4 @@
-package JavaCollections.LinkedList;
+package JavaCollections.LinkedListApp;
 
 import java.util.Objects;
 

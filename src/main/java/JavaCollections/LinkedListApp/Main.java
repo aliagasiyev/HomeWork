@@ -1,4 +1,4 @@
-package JavaCollections.LinkedList;
+package JavaCollections.LinkedListApp;
 
 public class Main {
     public static void main(String[] args) {

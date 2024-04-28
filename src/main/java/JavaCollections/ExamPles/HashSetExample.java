@@ -7,10 +7,10 @@ import java.util.LinkedHashSet;
 public class HashSetExample {
     public static void main(String[] args) {
          // default capacity 16 Load Factor 0.75
-        // HashSet hs=new HashSet(100); // initial capacity 100
-       // HashSet<Integer>hs =new HashSet<>();
+        // HashSetPractic hs=new HashSetPractic(100); // initial capacity 100
+       // HashSetPractic<Integer>hs =new HashSetPractic<>();
 
-        // Add object/element HashSet
+        // Add object/element HashSetPractic
         HashSet hs = new HashSet();
         hs.add(100);
         hs.add("welcome");
