@@ -5,32 +5,23 @@ import java.util.*;
 public class Test {
     public static void main(String[] args) {
 
-        List<String> names = new ArrayList<>();
-        names.add("Osman");
-        names.add("Elvin");
-        names.set(1, "Togrul");
-        System.out.println(names.contains("Elvin"));
-        System.out.println(names.remove(1));
-        System.out.println(names.remove("Elnur"));
-        System.out.println(names);
-
-        Map<Integer, String> map = new HashMap<>();
-        map.put(1, "A");
-        map.put(2, "B");
-        map.put(1, "C");
-        map.put(null, "D");
-        map.put(null, "E");
-        System.out.println(map);
-        System.out.println(map.keySet());
-
-
-
-
-
-
-
-
-
+//        List<String> names = new ArrayList<>();
+//        names.add("Osman");
+//        names.add("Elvin");
+//        names.set(1, "Togrul");
+//        System.out.println(names.contains("Elvin"));
+//        System.out.println(names.remove(1));
+//        System.out.println(names.remove("Elnur"));
+//        System.out.println(names);
+//
+//        Map<Integer, String> map = new HashMap<>();
+//        map.put(1, "A");
+//        map.put(2, "B");
+//        map.put(1, "C");
+//        map.put(null, "D");
+//        map.put(null, "E");
+//        System.out.println(map);
+//        System.out.println(map.keySet();
 
 
 

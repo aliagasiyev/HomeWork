@@ -24,6 +24,7 @@ public class SearchAlghoritm {
         int end = array.length - 1;
 
         while (start <= end) {
+
             int point = (start + end) / 2;
 
             if (array[point] == num) {
