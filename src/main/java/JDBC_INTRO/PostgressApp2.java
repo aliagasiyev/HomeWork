@@ -16,7 +16,7 @@ public class PostgressApp2 {
             ResultSet rs = statement.executeQuery(sql1);
 
             while (rs.next()){
-                int id=rs.getInt("jhbbj")
+                int id=rs.getInt("jhbbj");
             }
 
 
